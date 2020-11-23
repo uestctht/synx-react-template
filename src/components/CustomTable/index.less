@@ -1,0 +1,39 @@
+.custom-table-container {
+  .header {
+    display: flex;
+    margin-bottom: 10px;
+    .button {
+      margin-right: 10px;
+    }
+    .filter {
+      margin-left: auto;
+      display: flex;
+      .input {
+        margin-right: 5px;
+      }
+      .button {
+        margin-right: 5px;
+      }
+      .filter-button {
+        display: inline-block;
+        line-height: 32px;
+      }
+    }
+  }
+  .filter-container {
+    width: 100%;
+    max-height: 200px;
+    overflow: auto;
+  }
+  :global {
+    .ant-table-thead > tr > th {
+      background: white;
+    }
+    .ant-table-tbody > tr:nth-child(even) {
+      background: #f3f7fa;
+    }
+    .ant-breadcrumb {
+      font-size: 18px;
+    }
+  }
+}

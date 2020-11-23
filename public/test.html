@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>干训基地</title>
+
+    <style>
+      .row {
+        padding: 0;
+        margin: 0 -0.6875em;
+      }
+      .row:after {
+        content: "";
+        display: block;
+        clear: both;
+        height: 0;
+      }
+      .col {
+        float: left;
+        box-sizing: border-box;
+        padding: 0 0.6875em 1.375em;
+        width: 100%;
+      }
+      @media only screen and (min-width: 35em) {
+        .row-quartet > * {
+          width: 50%;
+        }
+        .subcategory-featured {
+          width: 100%;
+        }
+      }
+      @media only screen and (min-width: 50em) {
+        .row-quartet > * {
+          width: 25%;
+        }
+        .subcategory-featured {
+          width: 50%;
+        }
+      }
+      @media only screen and (min-width: 70em) {
+        .subcategory-header {
+          width: 20%;
+        }
+        .subcategory-content {
+          width: 80%;
+        }
+      }
+      /* .row-quartet > * {
+        width: 25%;
+      }
+      .row-trio > * {
+        width: 33.33333%;
+      } */
+      /* .subcategory-content {
+        width: 80%;
+      }
+      .subcategory-header {
+        width: 20%;
+      }
+      .subcategory-featured {
+        width: 50%;
+      } */
+      .col {
+        min-height: 100px;
+        outline: 1px solid #666;
+      }
+      .story {
+        padding: 0.6875em;
+        background-color: #eee;
+      }
+      .story img {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="subcategory">
+      <div class="row">
+        <header class="col subcategory-header">
+          <h2>Sub-section 1</h2>
+        </header>
+        <div class="col subcategory-content">
+          <div class="row row-quartet">
+            <div class="col subcategory-featured"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+          <div class="row row-quartet">
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+            <div class="col"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="subcategory">
+      <div class="row">
+        <header class="col subcategory-header">
+          <h2>Sub-section 2</h2>
+        </header>
+        <div class="col subcategory-content">
+          <div class="row row-trio">
+            <div class="col">
+              <article class="story">
+                <img src="./background.png" />
+                <h3>Cras suscipit nec leo id.</h3>
+                <p>Autem repudiandae...</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="story">
+                <img src="./background.png" />
+                <h3>Cras suscipit nec leo id.</h3>
+                <p>Autem repudiandae...</p>
+              </article>
+            </div>
+            <div class="col">
+              <article class="story">
+                <img src="./background.png" />
+                <h3>Cras suscipit nec leo id.</h3>
+                <p>Autem repudiandae...</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

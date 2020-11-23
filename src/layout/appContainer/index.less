@@ -1,0 +1,45 @@
+.app-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  .nav-bg-full {
+    height: 100%;
+    width: 200px;
+    z-index: -2;
+    background-color: #3464e0;
+    position: fixed;
+    left: 0;
+  }
+  .nav-full {
+    height: calc(100% - 60px);
+    width: 200px;
+    overflow: auto;
+  }
+  .nav {
+    overflow: auto;
+    height: calc(100% - 60px);
+    width: 100px;
+  }
+  .app-content {
+    width: 100%;
+    height: 100%;
+    margin-right: 10px;
+  }
+  .collapse-container {
+    position: absolute;
+    bottom: 10px;
+  }
+  :global {
+    .ant-menu {
+      background: 0;
+      font-size: 16px;
+    }
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+      background: 0;
+      box-shadow: inset 0 0px 0px rgba(0, 0, 0, 0.45);
+    }
+    .ant-menu-inline {
+      border-right: 0;
+    }
+  }
+}

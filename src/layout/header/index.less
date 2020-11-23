@@ -1,0 +1,43 @@
+.header-container {
+  width: 100%;
+  height: 70px;
+  max-height: 70px;
+  margin-bottom: 10px;
+  display: flex;
+  .logo {
+    margin: 10px;
+    margin-left: 15px;
+    display: block;
+  }
+  .header-action {
+    display: flex;
+    margin-left: auto;
+    height: 70px;
+    align-items: center;
+    justify-content: end;
+    .header-search {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+    .header-user-logo {
+      margin-right: 5px;
+    }
+    .header-user-name {
+      color: white;
+      font-size: 18px;
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+    .header-message {
+      margin-right: 20px;
+    }
+    .header-loginout {
+      margin-right: 20px;
+    }
+  }
+  :global {
+    .ant-input-affix-wrapper .ant-input:not(:first-child) {
+      border-radius: 15px;
+    }
+  }
+}

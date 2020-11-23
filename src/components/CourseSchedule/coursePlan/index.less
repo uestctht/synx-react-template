@@ -1,0 +1,39 @@
+.plan-container {
+  width: 100%;
+  overflow: auto;
+  .plan-header {
+    display: flex;
+    margin-bottom: 10px;
+    text-align: center;
+    .plan-name {
+      margin-right: 20px;
+    }
+  }
+  .content-container {
+    display: flex;
+    .course-list {
+      text-align: center;
+      .course-entity {
+        margin-bottom: 10px;
+        .course-name {
+          width: 100px;
+          display: block;
+          white-space: pre-wrap;
+          word-wrap: break-word;
+          overflow: hidden;
+        }
+      }
+    }
+    .add-class {
+      color: #1890ff;
+      .icon {
+        margin-right: 2px;
+      }
+    }
+  }
+  :global {
+    .ant-card-body {
+      padding: 10px;
+    }
+  }
+}
